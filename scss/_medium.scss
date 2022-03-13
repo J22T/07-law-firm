@@ -1,0 +1,113 @@
+/* NAVigation  */
+nav{
+	position: relative;
+	ul.closed {display:block;}
+	button {display: none;}
+	
+	ul {
+		margin-left: 2%;
+	}
+	
+	ul li{float: left;}
+	
+	ul li a {
+		border: none;
+		border-right: 1px solid rgba(0,0,0,0.2);
+		padding: .7rem .9rem;
+		transition: background 0.3s linear;
+		-webkit-transition: background 0.3s linear;
+	}
+	
+	ul li a span {display: none;}
+	ul li a:hover {
+		background-color: lighten($primaryColor, 30%);
+	}
+	
+	ul li ul {
+		left: -999em;
+		z-index: 99;
+		background-color: lighten($menuColor, 10%);
+		position: absolute;
+		width: 10rem;
+	}
+	
+	ul li:hover ul {
+		left:auto;
+	}
+	
+	ul li ul li {
+		float: none;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+}/*end navigation*/
+
+
+
+/* HEADER  */
+header {
+	margin-top: 0;
+	
+	.header{
+		
+		flex-direction: row;
+		justify-content: space-between;
+	
+	input[type=text] {
+		height: 40px;
+    	width: 30%;
+		padding-left: 5px;
+		border-radius: 10px;
+    	-webkit-transition: width 0.4s ease-in-out;
+    	transition: width 0.4s ease-in-out;
+		align-self: flex-end;
+	}
+	input[type=text]:focus {
+		height: 35px;
+    	width: 40%;
+	}
+
+
+
+
+	}
+}
+
+/* MAIN  */
+main {
+	h1 {}
+	.box {font-size: 2rem;}
+	.box span {font-size: 1.5rem;}
+	
+	
+	    /*  ------------- COLUMNS LAYOUT -------------  */
+
+
+@for $i from 1 through 12 {
+	$w: ($i / 12) * 100%;
+	.medium-#{$i} {
+		width: $w;
+		float: left;
+	}
+}
+	
+	
+} // end main

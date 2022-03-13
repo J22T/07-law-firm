@@ -1,0 +1,59 @@
+/*HEADER*/
+header {
+	background-color: $primaryColor;
+	max-width: 64rem;
+	
+.header {
+	max-width: 75rem;
+	margin: 0 auto;
+	width: 100%;
+}
+}
+
+/* NAVigation  */
+nav.clearfix {
+	background-color: $primaryColor;
+	margin: 0 auto;
+	width: 85%;
+
+	ul li a span {
+		display: inline;
+	}
+
+	.navigation {
+		max-width: 75rem;
+		margin: 0 auto;
+		background-color: $thirdColor;
+	}
+
+    ul {
+        display: flex;
+        justify-content:end;
+
+		a {
+			color: black;
+		}
+    }
+	
+	
+}
+
+
+/*MAIN*/
+main{
+	max-width: 75rem;
+	margin: 0 auto;
+	
+	
+	 /*  ------------- COLUMNS LAYOUT -------------  */
+
+
+@for $i from 1 through 12 {
+	$w: ($i / 12) * 100%;
+	.large-#{$i} {
+		width: $w;
+		float: left;
+	}
+}
+	
+}/*end MAIN*/
