@@ -128,18 +128,10 @@ header {
   background-color: #485058;
   margin-top: 44px;
   border-top: 3px solid white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
 header .header {
   display: flex;
-  flex-direction: column;
-}
-header .header .titleSlogan {
-  width: 300px;
 }
 header .header h1, header .header h2 {
   color: silver;
