@@ -568,6 +568,9 @@ div#footerContainer {
     margin: 0 auto;
     width: 100%;
   }
+  header .header h1 {
+    margin-right: 30rem;
+  }
   header .header h2 {
     font-size: 24px;
     display: block;
