@@ -394,7 +394,7 @@ main .tips button {
     -webkit-transition: background 0.3s linear;
   }
   nav ul li a span {
-    display: none;
+    display: inline;
   }
   nav ul li a:hover {
     background-color: #939da6;
@@ -500,7 +500,6 @@ main .tips button {
   /*HEADER*/
   header {
     background-color: #485058;
-    max-width: 64rem;
   }
   header .header {
     max-width: 75rem;
@@ -512,7 +511,7 @@ main .tips button {
   nav.clearfix {
     background-color: #485058;
     margin: 0 auto;
-    width: 85%;
+    width: 100%;
   }
   nav.clearfix ul li a span {
     display: inline;

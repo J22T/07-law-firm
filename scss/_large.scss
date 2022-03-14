@@ -1,7 +1,6 @@
 /*HEADER*/
 header {
 	background-color: $primaryColor;
-	max-width: 64rem;
 	
 .header {
 	max-width: 75rem;
@@ -14,7 +13,7 @@ header {
 nav.clearfix {
 	background-color: $primaryColor;
 	margin: 0 auto;
-	width: 85%;
+	width: 100%;
 
 	ul li a span {
 		display: inline;
