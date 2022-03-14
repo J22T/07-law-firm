@@ -384,7 +384,7 @@ main .tips button {
     margin-left: 2%;
   }
   nav ul li {
-    float: left;
+    float: right;
   }
   nav ul li a {
     border: none;
