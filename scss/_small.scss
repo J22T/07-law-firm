@@ -59,7 +59,7 @@ header {
 
 
 /* NAV  */
-div#navContainer {background-color: darken($primaryColor, 50%); width: 100%; float: left;}
+div#navContainer {background-color: white; width: 100%; float: left;}
 
 nav {
 	background-color: lighten($primaryColor, 30%);
@@ -90,7 +90,7 @@ nav {
             }
 			
 			ul li.active a{
-				background-color: lighten($primaryColor, 30%);
+				background-color: darken($primaryColor, 5%);
 			}
 			
 			ul li ul li a{

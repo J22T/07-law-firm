@@ -160,7 +160,7 @@ header .header img {
 
 /* NAV  */
 div#navContainer {
-  background-color: black;
+  background-color: white;
   width: 100%;
   float: left;
 }
@@ -191,7 +191,7 @@ nav ul li {
   margin: 0;
 }
 nav ul li.active a {
-  background-color: #939da6;
+  background-color: #3d434a;
 }
 nav ul li ul li a {
   padding-left: 8%;
@@ -394,8 +394,15 @@ div#footerContainer {
 }
 
 @media only screen and (min-width: 35em) {
-  /* NAVigation  */
+  /* NAV  */
+  div#navContainer {
+    background-color: white;
+    width: 100%;
+    float: left;
+  }
+
   nav {
+    background-color: #939da6;
     position: relative;
   }
   nav ul.closed {
@@ -433,9 +440,15 @@ div#footerContainer {
   nav ul li:hover ul {
     left: auto;
   }
+  nav ul li a:hover {
+    background-color: #3d434a;
+  }
   nav ul li ul li {
     float: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  nav ul li.active a {
+    background-color: #3d434a;
   }
 
   /*end navigation*/
@@ -531,82 +544,95 @@ div#footerContainer {
     width: 100%;
   }
 
-  /* NAVigation  */
-  nav.clearfix {
+  /* NAV  */
+  div#navContainer {
+    background-color: white;
+    width: 100%;
+    float: left;
+  }
+
+  nav {
+    background-color: #939da6;
+    /*MAIN*/
+    /*end MAIN*/
+  }
+  nav nav.clearfix {
     background-color: #485058;
     margin: 0 auto;
     width: 100%;
   }
-  nav.clearfix ul li a span {
+  nav nav.clearfix ul li a span {
     display: inline;
   }
-  nav.clearfix .navigation {
+  nav nav.clearfix .navigation {
     max-width: 75rem;
     margin: 0 auto;
     background-color: silver;
   }
-  nav.clearfix ul {
+  nav nav.clearfix ul {
     display: flex;
     justify-content: end;
   }
-  nav.clearfix ul a {
+  nav nav.clearfix ul a {
     color: black;
   }
-
-  /*MAIN*/
-  main {
+  nav nav.clearfix ul li a:hover {
+    background-color: #3d434a;
+  }
+  nav nav.clearfix ul li.active a {
+    background-color: #3d434a;
+  }
+  nav main {
     max-width: 75rem;
     margin: 0 auto;
     /*  ------------- COLUMNS LAYOUT -------------  */
   }
-  main .large-1 {
+  nav main .large-1 {
     width: 8.3333333333%;
     float: left;
   }
-  main .large-2 {
+  nav main .large-2 {
     width: 16.6666666667%;
     float: left;
   }
-  main .large-3 {
+  nav main .large-3 {
     width: 25%;
     float: left;
   }
-  main .large-4 {
+  nav main .large-4 {
     width: 33.3333333333%;
     float: left;
   }
-  main .large-5 {
+  nav main .large-5 {
     width: 41.6666666667%;
     float: left;
   }
-  main .large-6 {
+  nav main .large-6 {
     width: 50%;
     float: left;
   }
-  main .large-7 {
+  nav main .large-7 {
     width: 58.3333333333%;
     float: left;
   }
-  main .large-8 {
+  nav main .large-8 {
     width: 66.6666666667%;
     float: left;
   }
-  main .large-9 {
+  nav main .large-9 {
     width: 75%;
     float: left;
   }
-  main .large-10 {
+  nav main .large-10 {
     width: 83.3333333333%;
     float: left;
   }
-  main .large-11 {
+  nav main .large-11 {
     width: 91.6666666667%;
     float: left;
   }
-  main .large-12 {
+  nav main .large-12 {
     width: 100%;
     float: left;
   }
-
-  /*end MAIN*/
 }

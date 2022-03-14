@@ -1,5 +1,8 @@
-/* NAVigation  */
-nav{
+/* NAV  */
+div#navContainer {background-color: white; width: 100%; float: left;}
+
+nav {
+	background-color: lighten($primaryColor, 30%);
 	position: relative;
 
 	ul.closed {
@@ -45,10 +48,18 @@ nav{
 	ul li:hover ul {
 		left:auto;
 	}
+
+	ul li a:hover {
+		background-color: darken($primaryColor, 5%);
+	}
 	
 	ul li ul li {
 		float: none;
 		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+
+	ul li.active a{
+		background-color: darken($primaryColor, 5%);
 	}
 	
 	
