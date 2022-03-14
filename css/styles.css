@@ -217,6 +217,12 @@ main .column {
   padding: 0 2%;
   margin: 1em 0;
 }
+main .column h2 {
+  padding: 1rem;
+}
+main .column p {
+  padding: 1rem;
+}
 main .small-1 {
   width: 8.3333333333%;
   float: left;
@@ -269,11 +275,11 @@ main .att {
   margin: 0 auto;
 }
 main .Attorney {
-  background-color: #485058;
+  background-color: #b3b3b3;
 }
 main .Attorney h2 {
   text-align: center;
-  color: silver;
+  color: #31373c;
   font-size: 24px;
   margin: 5px;
 }
@@ -281,11 +287,14 @@ main .Attorney img {
   width: 100%;
 }
 main .Attorney button {
-  width: 100%;
   background-color: #485058;
+  border-radius: 1rem;
   border: none;
-  padding: 1em;
+  padding: 1rem;
   color: silver;
+  margin: 2rem;
+  align-items: center;
+  font-weight: bold;
 }
 main .clients, main .case {
   background-color: #485058;
@@ -314,10 +323,10 @@ main .blogs h2 {
 }
 main .blogs button {
   width: 100%;
-  background-color: #485058;
+  background-color: silver;
   padding: 1em;
   border: none;
-  color: silver;
+  color: #485058;
 }
 main .tips {
   background-color: #485058;

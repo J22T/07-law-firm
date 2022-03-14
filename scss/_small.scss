@@ -168,6 +168,14 @@ main {
 .column{
 	padding: 0 $gutter;
 	margin: 1em 0;
+
+	h2 {
+		padding: 1rem;
+	}
+
+	p {
+		padding: 1rem;
+	}
 }
 	
 @for $i from 1 through 12 {
@@ -206,11 +214,11 @@ main {
 	}
 
 	.Attorney {
-		background-color: $primaryColor;
+		background-color: darken($secondaryColor, 30%);
 		
 		h2 {
 			text-align: center;
-			color: $thirdColor;
+			color: darken($primaryColor, 10%);
 			font-size: 24px;
 			margin: 5px;
 		}
@@ -218,12 +226,15 @@ main {
 			width: 100%;
 		}
 		button {
-			width: 100%;
+			// width: 100%;
 			background-color: $primaryColor;
+			border-radius: 1rem;
 			border: none;
-			padding: 1em;
+			padding: 1rem;
 			color: $thirdColor;
-			
+			margin: 2rem;
+			align-items: center;
+			font-weight: bold;
 		}
 	}
 	
@@ -265,11 +276,13 @@ main {
 		}
 		button{
 			width: 100%;
-			background-color: $primaryColor;
+			background-color: $thirdColor;
 			padding: 1em;
 			border: none;
-			color: $thirdColor;
+			color: $primaryColor;
 		}
+
+
 	}
 	
 	

@@ -1,14 +1,22 @@
 /* NAVigation  */
 nav{
 	position: relative;
-	ul.closed {display:block;}
-	button {display: none;}
+
+	ul.closed {
+		display:block;
+	}
+
+	button {
+		display: none;
+	}
 	
 	ul {
 		margin-left: 2%;
 	}
 	
-	ul li{float: left;}
+	ul li{
+		float: left;
+	}
 	
 	ul li a {
 		border: none;
@@ -18,7 +26,10 @@ nav{
 		-webkit-transition: background 0.3s linear;
 	}
 	
-	ul li a span {display: none;}
+	ul li a span {
+		display: none;
+	}
+
 	ul li a:hover {
 		background-color: lighten($primaryColor, 30%);
 	}
