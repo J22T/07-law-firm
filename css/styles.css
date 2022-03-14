@@ -139,10 +139,12 @@ header .header h1, header .header h2 {
   margin: 0.35em 2%;
 }
 header .header h1 {
-  font-size: 36px;
+  font-size: 25px;
+  margin-left: 2rem;
+  margin-top: 3rem;
 }
 header .header h2 {
-  font-size: 24px;
+  display: none;
 }
 header .header img {
   padding: 1rem 0 0.5rem 2%;
