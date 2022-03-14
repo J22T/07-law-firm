@@ -120,6 +120,10 @@ body {
 }
 
 /* HEADER  */
+div#headerContainer {
+  background-color: black;
+}
+
 header {
   background-color: #464d55;
   width: 100%;
