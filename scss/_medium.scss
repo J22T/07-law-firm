@@ -1,3 +1,55 @@
+/* HEADER  */
+div#headerContainer {background-color: $primaryColor;}
+
+header {
+
+	
+	.header {
+		display: flex;
+		// grid-template-columns: 100px auto;
+		
+
+	
+	h1,h2 {
+		color: $thirdColor;
+		font-family: $defaultFont;
+		margin: .35em $gutter;
+	}
+
+	h1 {
+		font-size: 25px;
+		margin-left: 2rem;
+		margin-top: 3rem;
+	}
+
+	h2 {
+		font-size: 24px;
+		display: block;
+		margin-left: 2rem;
+		margin-top: 3rem;
+	}
+
+	img {
+		padding: 1rem 0 .5rem $gutter;
+		display: block;
+		width: 100px;
+	}
+		
+
+	}
+} // end header
+
+
+
+
+
+
+
+
+
+
+
+
 /* NAV  */
 div#navContainer {background-color: white; width: 100%; float: left;}
 

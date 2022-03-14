@@ -387,6 +387,36 @@ div#footerContainer {
 }
 
 @media only screen and (min-width: 35em) {
+  /* HEADER  */
+  div#headerContainer {
+    background-color: #485058;
+  }
+
+  header .header {
+    display: flex;
+  }
+  header .header h1, header .header h2 {
+    color: silver;
+    font-family: "Roboto", sans-serif;
+    margin: 0.35em 2%;
+  }
+  header .header h1 {
+    font-size: 25px;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+  header .header h2 {
+    font-size: 24px;
+    display: block;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+  header .header img {
+    padding: 1rem 0 0.5rem 2%;
+    display: block;
+    width: 100px;
+  }
+
   /* NAV  */
   div#navContainer {
     background-color: white;
