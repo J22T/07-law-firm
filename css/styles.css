@@ -163,7 +163,7 @@ nav button {
   border: none;
   font-size: 3rem;
   padding: .2rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   margin-right: 1rem;
   align-self: flex-end;
 }
@@ -302,7 +302,7 @@ main .Attorney button {
   border-radius: 1rem;
   border: none;
   padding: 1rem;
-  color: silver;
+  color: white;
   margin: 2rem;
   font-weight: bold;
 }
