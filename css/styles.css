@@ -313,7 +313,6 @@ main .Attorney button {
   padding: 1rem;
   color: silver;
   margin: 2rem;
-  align-items: center;
   font-weight: bold;
 }
 main .clients, main .case {
