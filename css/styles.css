@@ -151,6 +151,7 @@ header .header h2 {
 header .header img {
   padding: 1rem 0 0.5rem 2%;
   display: block;
+  width: 100px;
 }
 
 /* NAV  */
