@@ -577,6 +577,11 @@ div#footerContainer {
     margin-left: 2rem;
     margin-top: 3rem;
   }
+  header .header img {
+    padding: 1rem 0 0.5rem 2%;
+    display: block;
+    width: 100px;
+  }
 
   /* NAV  */
   div#navContainer {
