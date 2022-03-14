@@ -63,6 +63,8 @@ div#navContainer {background-color: white; width: 100%; float: left;}
 
 nav {
 	background-color: lighten($primaryColor, 30%);
+	display: flex;
+	flex-direction: column;
 
 	button {
 		background: transparent;
@@ -70,8 +72,8 @@ nav {
 		font-size: 3rem;
 		padding: .2rem;
 		color: rgba(255, 255, 255, 0.9);
-		// float: right;
 		margin-right: 1rem;
+		align-self: flex-end;
 	}
 
 			ul li a {
