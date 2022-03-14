@@ -120,14 +120,8 @@ body {
 }
 
 /* HEADER  */
-div#headerContainer {
-  background-color: #485058;
-}
-
 header {
-  background-color: #485058;
-  margin-top: 44px;
-  border-top: 3px solid white;
+  background-color: #464d55;
   width: 100%;
 }
 header .header {
@@ -560,6 +554,11 @@ div#footerContainer {
   }
 }
 @media only screen and (min-width: 64em) {
+  nav, footer {
+    max-width: 1200px;
+    margin: auto;
+  }
+
   /*HEADER*/
   header {
     background-color: #485058;

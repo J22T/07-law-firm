@@ -1,3 +1,8 @@
+nav, footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
 /*HEADER*/
 header {
 	background-color: $primaryColor;
@@ -6,7 +11,7 @@ header {
 	max-width: 75rem;
 	margin: 0 auto;
 	width: 100%;
-	
+
 	h2 {
 		font-size: 24px;
 		display: block;

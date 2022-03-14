@@ -12,12 +12,12 @@ body {
 
 
 /* HEADER  */
-div#headerContainer {background-color: $primaryColor;}
+div#headerContainer {
+
+}
 
 header {
-	background-color: $primaryColor;
-	margin-top: 44px;
-	border-top: 3px solid $secondaryColor;
+	background-color: darken($primaryColor, 1%);
 
 	// flex-direction: row;
 	// justify-content: space-between;
