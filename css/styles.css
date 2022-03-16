@@ -134,7 +134,7 @@ header .header {
 header .header h1, header .header h2 {
   color: silver;
   font-family: "Roboto", sans-serif;
-  margin: 0.35em 2%;
+  margin: 0.35em 2vw;
 }
 header .header h1 {
   font-size: 25px;
@@ -145,7 +145,7 @@ header .header h2 {
   display: none;
 }
 header .header img {
-  padding: 1rem 0 0.5rem 2%;
+  padding: 1rem 0 0.5rem 2vw;
   display: block;
   width: 100px;
 }
@@ -203,10 +203,6 @@ nav ul.open {
 
 /*end nav*/
 /* MAIN  */
-div#mainContainer {
-  background-color: black;
-}
-
 main {
   max-width: 75rem;
   margin: 1em auto;
@@ -222,15 +218,18 @@ main {
 main h1 {
   font-size: 36px;
   color: white;
-  padding-left: 2%;
+  padding-left: 2vw;
 }
 main .row {
   clear: both;
   margin: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 main .column {
-  padding: 0 2%;
-  margin: 1em 0;
+  padding: 1rem 2vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 main .column h2 {
   padding: 1rem;
@@ -239,52 +238,40 @@ main .column p {
   padding: 1rem;
 }
 main .small-1 {
-  width: 8.3333333333%;
-  float: left;
+  flex-basis: 8.3333333333%;
 }
 main .small-2 {
-  width: 16.6666666667%;
-  float: left;
+  flex-basis: 16.6666666667%;
 }
 main .small-3 {
-  width: 25%;
-  float: left;
+  flex-basis: 25%;
 }
 main .small-4 {
-  width: 33.3333333333%;
-  float: left;
+  flex-basis: 33.3333333333%;
 }
 main .small-5 {
-  width: 41.6666666667%;
-  float: left;
+  flex-basis: 41.6666666667%;
 }
 main .small-6 {
-  width: 50%;
-  float: left;
+  flex-basis: 50%;
 }
 main .small-7 {
-  width: 58.3333333333%;
-  float: left;
+  flex-basis: 58.3333333333%;
 }
 main .small-8 {
-  width: 66.6666666667%;
-  float: left;
+  flex-basis: 66.6666666667%;
 }
 main .small-9 {
-  width: 75%;
-  float: left;
+  flex-basis: 75%;
 }
 main .small-10 {
-  width: 83.3333333333%;
-  float: left;
+  flex-basis: 83.3333333333%;
 }
 main .small-11 {
-  width: 91.6666666667%;
-  float: left;
+  flex-basis: 91.6666666667%;
 }
 main .small-12 {
-  width: 100%;
-  float: left;
+  flex-basis: 100%;
 }
 main .att {
   margin: 0 auto;
@@ -329,7 +316,7 @@ main .blogs img {
   width: 100%;
 }
 main .blogs h2, main .blogs p {
-  margin: 0.5em 2%;
+  margin: 0.5em 2vw;
   color: silver;
 }
 main .blogs h2 {
@@ -363,21 +350,11 @@ main .tips button {
 }
 
 /* FOOTER  */
-div#footerContainer {
-  background-color: black;
-  width: 100%;
-}
-
-.footer {
-  background-color: #485058;
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
-}
-
 .social {
   text-decoration: none;
   color: #485058;
+  display: flex;
+  flex-direction: row;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -399,7 +376,7 @@ div#footerContainer {
   header .header h1, header .header h2 {
     color: silver;
     font-family: "Roboto", sans-serif;
-    margin: 0.35em 2%;
+    margin: 0.35em 2vw;
   }
   header .header h1 {
     font-size: 25px;
@@ -413,7 +390,7 @@ div#footerContainer {
     margin-top: 3rem;
   }
   header .header img {
-    padding: 1rem 0 0.5rem 2%;
+    padding: 1rem 0 0.5rem 2vw;
     display: block;
     width: 100px;
   }
@@ -509,52 +486,40 @@ div#footerContainer {
     font-size: 1.5rem;
   }
   main .medium-1 {
-    width: 8.3333333333%;
-    float: left;
+    flex-basis: 8.3333333333%;
   }
   main .medium-2 {
-    width: 16.6666666667%;
-    float: left;
+    flex-basis: 16.6666666667%;
   }
   main .medium-3 {
-    width: 25%;
-    float: left;
+    flex-basis: 25%;
   }
   main .medium-4 {
-    width: 33.3333333333%;
-    float: left;
+    flex-basis: 33.3333333333%;
   }
   main .medium-5 {
-    width: 41.6666666667%;
-    float: left;
+    flex-basis: 41.6666666667%;
   }
   main .medium-6 {
-    width: 50%;
-    float: left;
+    flex-basis: 50%;
   }
   main .medium-7 {
-    width: 58.3333333333%;
-    float: left;
+    flex-basis: 58.3333333333%;
   }
   main .medium-8 {
-    width: 66.6666666667%;
-    float: left;
+    flex-basis: 66.6666666667%;
   }
   main .medium-9 {
-    width: 75%;
-    float: left;
+    flex-basis: 75%;
   }
   main .medium-10 {
-    width: 83.3333333333%;
-    float: left;
+    flex-basis: 83.3333333333%;
   }
   main .medium-11 {
-    width: 91.6666666667%;
-    float: left;
+    flex-basis: 91.6666666667%;
   }
   main .medium-12 {
-    width: 100%;
-    float: left;
+    flex-basis: 100%;
   }
 }
 @media only screen and (min-width: 64em) {
@@ -582,7 +547,7 @@ div#footerContainer {
     margin-top: 3rem;
   }
   header .header img {
-    padding: 1rem 0 0.5rem 2%;
+    padding: 1rem 0 0.5rem 2vw;
     display: block;
     width: 100px;
   }
@@ -631,51 +596,39 @@ div#footerContainer {
     /*  ------------- COLUMNS LAYOUT -------------  */
   }
   nav main .large-1 {
-    width: 8.3333333333%;
-    float: left;
+    flex-basis: 8.3333333333%;
   }
   nav main .large-2 {
-    width: 16.6666666667%;
-    float: left;
+    flex-basis: 16.6666666667%;
   }
   nav main .large-3 {
-    width: 25%;
-    float: left;
+    flex-basis: 25%;
   }
   nav main .large-4 {
-    width: 33.3333333333%;
-    float: left;
+    flex-basis: 33.3333333333%;
   }
   nav main .large-5 {
-    width: 41.6666666667%;
-    float: left;
+    flex-basis: 41.6666666667%;
   }
   nav main .large-6 {
-    width: 50%;
-    float: left;
+    flex-basis: 50%;
   }
   nav main .large-7 {
-    width: 58.3333333333%;
-    float: left;
+    flex-basis: 58.3333333333%;
   }
   nav main .large-8 {
-    width: 66.6666666667%;
-    float: left;
+    flex-basis: 66.6666666667%;
   }
   nav main .large-9 {
-    width: 75%;
-    float: left;
+    flex-basis: 75%;
   }
   nav main .large-10 {
-    width: 83.3333333333%;
-    float: left;
+    flex-basis: 83.3333333333%;
   }
   nav main .large-11 {
-    width: 91.6666666667%;
-    float: left;
+    flex-basis: 91.6666666667%;
   }
   nav main .large-12 {
-    width: 100%;
-    float: left;
+    flex-basis: 100%;
   }
 }
