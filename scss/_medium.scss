@@ -11,6 +11,14 @@ header {
 	div#phone {
 		display: block;
 		justify-self: end;
+		color: white;
+		text-decoration: none;
+		font-weight:500;
+		font-size: 2rem;
+	}
+
+	div#phone:hover {
+		color: $thirdColor;
 	}
 	
 	.header {

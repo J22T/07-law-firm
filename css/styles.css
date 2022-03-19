@@ -406,6 +406,13 @@ div#closed a {
   header div#phone {
     display: block;
     justify-self: end;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  header div#phone:hover {
+    color: silver;
   }
   header .header {
     display: flex;
