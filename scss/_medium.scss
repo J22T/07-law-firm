@@ -1,8 +1,17 @@
 /* HEADER  */
-div#headerContainer {background-color: $primaryColor;}
+div#headerContainer {
+	grid-row-start: 1;
+	background-color: $primaryColor;
+}
 
 header {
 	margin-top: 0;
+	grid-template-columns: 51px auto auto;
+
+	div#phone {
+		display: block;
+		justify-self: end;
+	}
 	
 	.header {
 		display: flex;
@@ -64,71 +73,81 @@ header {
 
 /* NAV  */
 div#navContainer {
-	background-color: white; width: 100%;
+	grid-row-start: 2;
+	background-color: white;
+	width: 100%;
+}
+
+div#hamBTN, div#closed {
+	display: none;
 }
 
 nav {
+	height: auto;
 	background-color: lighten($primaryColor, 30%);
-	position: relative;
-	display: flex;
-	justify-content: right;
 
 	ul.closed {
 		display:block;
+	}
+
+	ul {
+		display: flex;
+		justify-content: end;
+		border: none;
+
+		li {
+			border: none;
+		}
+
+		li a {
+			border: none;
+			border-right: 1px solid rgba(0,0,0,0.2);
+			padding: .7rem .9rem;
+			transition: background 0.3s linear;
+			-webkit-transition: background 0.3s linear;
+		}
+		
+		li a span {
+			display: inline;
+		}
+	
+		li a:hover {
+			background-color: lighten($primaryColor, 30%);
+		}
+		
+		li ul {
+			left: -999em;
+			z-index: 99;
+			background-color: lighten($menuColor, 10%);
+			position: absolute;
+			width: 10rem;
+		}
+		
+		 li:hover ul {
+			left:auto;
+		}
+	
+		 li a:hover {
+			background-color: darken($primaryColor, 5%);
+		}
+		
+		 li ul li {
+			float: none;
+			border-bottom: 1px solid rgba(0,0,0,0.2);
+		}
+	
+		 li.active a{
+			background-color: darken($primaryColor, 5%);
+		}
+
 	}
 
 	button {
 		display: none;
 	}
 	
-	ul {
-		margin-left: 2%;
-	}
 	
-	ul li{
-		float: right;
-	}
-	
-	ul li a {
-		border: none;
-		border-right: 1px solid rgba(0,0,0,0.2);
-		padding: .7rem .9rem;
-		transition: background 0.3s linear;
-		-webkit-transition: background 0.3s linear;
-	}
-	
-	ul li a span {
-		display: inline;
-	}
 
-	ul li a:hover {
-		background-color: lighten($primaryColor, 30%);
-	}
-	
-	ul li ul {
-		left: -999em;
-		z-index: 99;
-		background-color: lighten($menuColor, 10%);
-		position: absolute;
-		width: 10rem;
-	}
-	
-	ul li:hover ul {
-		left:auto;
-	}
-
-	ul li a:hover {
-		background-color: darken($primaryColor, 5%);
-	}
-	
-	ul li ul li {
-		float: none;
-		border-bottom: 1px solid rgba(0,0,0,0.2);
-	}
-
-	ul li.active a{
-		background-color: darken($primaryColor, 5%);
-	}
 	
 }/*end navigation*/
 
@@ -144,7 +163,7 @@ nav {
 /* MAIN  */
 
 div#mainContainer {
-	grid-row-start: 2;	
+	grid-row-start: 3;	
 	}
 
 
@@ -159,6 +178,14 @@ main {
 	}
 	
 	
+
+
+
+
+
+
+
+
 	    /*  ------------- COLUMNS LAYOUT -------------  */
 
 
@@ -180,7 +207,7 @@ main {
 
 
 div#footerContainer {
-	grid-row-start:3 ;
-		 background-color: black;
-		 width: 100%;
+	grid-row-start: 4;
+	background-color: black;
+	width: 100%;
 	 }

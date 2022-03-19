@@ -395,11 +395,17 @@ div#closed a {
 @media only screen and (min-width: 35em) {
   /* HEADER  */
   div#headerContainer {
+    grid-row-start: 1;
     background-color: #485058;
   }
 
   header {
     margin-top: 0;
+    grid-template-columns: 51px auto auto;
+  }
+  header div#phone {
+    display: block;
+    justify-self: end;
   }
   header .header {
     display: flex;
@@ -443,27 +449,29 @@ div#closed a {
 
   /* NAV  */
   div#navContainer {
+    grid-row-start: 2;
     background-color: white;
     width: 100%;
   }
 
+  div#hamBTN, div#closed {
+    display: none;
+  }
+
   nav {
+    height: auto;
     background-color: #939da6;
-    position: relative;
-    display: flex;
-    justify-content: right;
   }
   nav ul.closed {
     display: block;
   }
-  nav button {
-    display: none;
-  }
   nav ul {
-    margin-left: 2%;
+    display: flex;
+    justify-content: end;
+    border: none;
   }
   nav ul li {
-    float: right;
+    border: none;
   }
   nav ul li a {
     border: none;
@@ -498,11 +506,14 @@ div#closed a {
   nav ul li.active a {
     background-color: #3d434a;
   }
+  nav button {
+    display: none;
+  }
 
   /*end navigation*/
   /* MAIN  */
   div#mainContainer {
-    grid-row-start: 2;
+    grid-row-start: 3;
   }
 
   main {
@@ -552,7 +563,7 @@ div#closed a {
   }
 
   div#footerContainer {
-    grid-row-start: 3;
+    grid-row-start: 4;
     background-color: black;
     width: 100%;
   }
