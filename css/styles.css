@@ -285,11 +285,11 @@ main h2 {
 main p {
   padding: 1rem;
 }
-main .att {
-  margin: 0 auto;
-}
 main .Attorney {
   background-color: #b3b3b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main .Attorney h2 {
   text-align: center;
@@ -304,10 +304,11 @@ main .Attorney a {
   background-color: #485058;
   border-radius: 1rem;
   border: none;
-  padding: 1rem;
+  text-decoration: none;
   color: white;
-  margin: 1rem;
   font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
 }
 main .clients, main .case {
   background-color: #485058;
@@ -323,6 +324,9 @@ main .clients a, main .clients h2, main .case a, main .case h2 {
 }
 main .blogs {
   background-color: #485058;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main .blogs img {
   width: 100%;
@@ -333,6 +337,7 @@ main .blogs h2, main .blogs p {
 }
 main .blogs h2 {
   font-size: 24px;
+  align-self: flex-start;
 }
 main .blogs a {
   width: 100%;

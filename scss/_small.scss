@@ -223,33 +223,34 @@ h2 {
 
 /*--------------ATTORNEY SELECTION---------------*/
 
-.att {
-margin: 0 auto;
-}
-
 .Attorney {
 background-color: darken($secondaryColor, 30%);
+display: flex;
+flex-direction: column;
+align-items: center;
 
-h2 {
-text-align: center;
-color: darken($primaryColor, 10%);
-font-size: 24px;
-margin: 5px;
-}
+	h2 {
+	text-align: center;
+	color: darken($primaryColor, 10%);
+	font-size: 24px;
+	margin: 5px;
+	}
 
-img {
-width: 100%;
-}
+	img {
+	width: 100%;
+	}
 
-a {
-background-color: $primaryColor;
-border-radius: 1rem;
-border: none;
-padding: 1rem;
-color: white;
-margin: 1rem;
-font-weight: bold;
-}
+	a {
+	background-color: $primaryColor;
+	border-radius: 1rem;
+	border: none;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 1rem;
+	margin: 1rem;
+	}
+
 }
 
 
@@ -290,6 +291,9 @@ font-size: 1.5rem;
 /*------------BLOG POSTS---------*/
 .blogs{
 background-color: $primaryColor;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 
 img {
@@ -303,6 +307,7 @@ color: $thirdColor;
 
 h2 {
 font-size: 24px;
+align-self: flex-start;
 }
 
 a {
