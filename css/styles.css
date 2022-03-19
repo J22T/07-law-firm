@@ -118,19 +118,26 @@ body {
   display: grid;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  padding-top: 10px;
 }
 
 /* HEADER  */
 div#headerContainer {
   grid-row-start: 1;
+  background-color: #485058;
+}
+div#headerContainer .colorTOP {
+  height: 10px;
+  background-color: black;
 }
 
 header {
   display: grid;
   grid-template-columns: 51px auto 44px;
   align-items: center;
-  padding: .5rem 2vw;
+  padding: 2vw;
+}
+header div#hamBTN a {
+  color: white;
 }
 header div#phone {
   display: none;
@@ -141,6 +148,7 @@ header h1, header h2 {
 }
 header h1 {
   font-size: 25px;
+  margin-left: 5rem;
 }
 header h2 {
   display: none;
@@ -608,8 +616,7 @@ div#closed a {
   /* NAV  */
   div#navContainer {
     background-color: white;
-    width: 100%;
-    float: left;
+    max-width: 100rem;
   }
 
   nav {

@@ -9,7 +9,6 @@ body {
 display: grid;
 font-family: $defaultFont;
 font-size: 16px;
-padding-top: 10px;
 }
 
 
@@ -29,15 +28,27 @@ padding-top: 10px;
 
 /* HEADER  */
 
+
+
 div#headerContainer {
 grid-row-start: 1;
+background-color: $primaryColor;
+
+.colorTOP {
+	height: 10px;
+	background-color: black;
+}
 }	
 
 header {
 display: grid;
 grid-template-columns: 51px auto 44px;
 align-items: center;
-padding: .5rem 2vw;
+padding: 2vw;
+
+div#hamBTN a {
+	color: white;
+}
 
 	div#phone {
 		display: none;
@@ -46,12 +57,11 @@ padding: .5rem 2vw;
 h1,h2 {
 color: $thirdColor;
 font-family: $defaultFont;
-
 }
 
 h1 {
 font-size: 25px;
-
+margin-left: 5rem;
 }
 
 h2 {

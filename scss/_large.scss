@@ -3,7 +3,21 @@ footer {
     margin: auto;
 }
 
+
+
+
+
+
+
+
+
+
 /*HEADER*/
+
+div#headerContainer {
+
+}
+
 header {
 	background-color: $primaryColor;
 	
@@ -32,11 +46,19 @@ header {
 
 }
 
+
+
+
+
+
+
+
+
+
 /* NAV  */
 div#navContainer {
 	background-color: white;
-	width: 100%;
-	float: left;
+	max-width: 100rem;
 }
 
 nav {
@@ -79,7 +101,23 @@ nav.clearfix {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /*MAIN*/
+
+div#mainContainer {
+
+}
+
+
 main {
 	max-width: 75rem;
 	margin: 0 auto;
@@ -99,3 +137,14 @@ main {
 
 
 
+
+
+
+
+
+
+// FOOTER
+
+div#footerContainer {
+
+}
