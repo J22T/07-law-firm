@@ -312,14 +312,14 @@ main .Attorney a {
 main .clients, main .case {
   background-color: #485058;
   text-align: center;
-  padding: 2em 0;
-  margin: .5em 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
 }
 main .clients a, main .clients h2, main .case a, main .case h2 {
-  width: 100%;
-  height: 100%;
   text-decoration: none;
-  color: silver;
+  color: white;
+  font-size: 1.5rem;
 }
 main .blogs {
   background-color: #485058;
