@@ -2,13 +2,27 @@
 div#headerContainer {background-color: $primaryColor;}
 
 header {
-
+	margin-top: 0;
 	
 	.header {
 		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		// grid-template-columns: 100px auto;
 		
-
+		input[type=text] {
+			height: 40px;
+			width: 30%;
+			padding-left: 5px;
+			border-radius: 10px;
+			-webkit-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
+			align-self: flex-end;
+		}
+		input[type=text]:focus {
+			height: 35px;
+			width: 40%;
+		}
 	
 	h1,h2 {
 		color: $thirdColor;
@@ -38,8 +52,6 @@ header {
 
 	}
 } // end header
-
-
 
 
 
@@ -118,57 +130,24 @@ nav {
 		background-color: darken($primaryColor, 5%);
 	}
 	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
 }/*end navigation*/
 
 
 
-/* HEADER  */
-header {
-	margin-top: 0;
-	
-	.header{
-		
-		flex-direction: row;
-		justify-content: space-between;
-	
-	input[type=text] {
-		height: 40px;
-    	width: 30%;
-		padding-left: 5px;
-		border-radius: 10px;
-    	-webkit-transition: width 0.4s ease-in-out;
-    	transition: width 0.4s ease-in-out;
-		align-self: flex-end;
-	}
-	input[type=text]:focus {
-		height: 35px;
-    	width: 40%;
-	}
 
 
 
 
-	}
-}
+
+
 
 /* MAIN  */
+
+div#mainContainer {
+	grid-row-start: 2;	
+	}
+
+
 main {
 	
 	.box {
@@ -190,3 +169,16 @@ main {
 	
 	
 } // end main
+
+
+
+
+
+
+
+
+div#footerContainer {
+	grid-row-start:3 ;
+		 background-color: black;
+		 width: 100%;
+	 }

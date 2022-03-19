@@ -30,10 +30,12 @@ div#headerContainer {
 	header {
 		display: grid;
 		grid-template-columns: 51px auto 44px;
-align-items: center;
-padding: .5rem 2vw;
+		align-items: center;
+		padding: .5rem 2vw;
 		
-
+		div#phone {
+			display: none;
+		}
 	
 	h1,h2 {
 		color: $thirdColor;
@@ -59,6 +61,81 @@ padding: .5rem 2vw;
 		
 
 	}// end header
+
+
+
+
+
+
+
+
+
+
+	div#navContainer {
+		grid-row-start: 4;
+			background-color: white;
+			width: 100%;
+		}
+	
+	nav {
+		height: 100vh;
+		background-color: lighten($primaryColor, 30%);
+	
+	ul {
+	border-bottom: 1px solid white;
+	
+	ul li {
+		border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+		padding: 0;
+		margin: 0;
+		}
+	
+	li a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		padding: 1rem 1rem;
+		padding: 1rem;
+	text-align: right;
+	}
+	
+	a {
+		background: transparent;
+		border: none;
+		font-size: 1.5rem;
+		padding: .2rem;
+		color: white;
+		align-self: flex-end;
+	}
+	
+	
+			li.active a {
+			background-color: darken($primaryColor, 10%);
+			}
+	
+			li ul li a {
+			padding-left: 8%;
+			}
+	
+			li a:hover {
+			background-color: darken($primaryColor, 10%);
+			}
+	
+			li a:active a {
+				background-color: darken($primaryColor, 10%);
+				}
+	
+			.closed {
+			display: none;
+			}
+	
+			.open {
+			display: block;
+			}
+	
+	}
+	
+	}
 
 
 
@@ -273,17 +350,7 @@ main {
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 		
 	}/*end Tips*/
@@ -306,6 +373,11 @@ grid-row-start:3 ;
 
 
 
+
+
+
+
+ 
 div#hamBTN a,  div#closed a {
 display: block;	
 padding: 1rem 2vw;
@@ -319,91 +391,14 @@ font-size: 2rem;
 
 
 
+
+
+
+
+
 div#closed a {
 margin-right: 2vw;
 }
-
-
-
-
-
-div#navContainer {
-	grid-row-start: 4;
-		background-color: white;
-		width: 100%;
-	}
-
-nav {
-	height: 100vh;
-	background-color: lighten($primaryColor, 30%);
-
-ul {
-border-bottom: 1px solid white;
-
-ul li {
-	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-	padding: 0;
-	margin: 0;
-	}
-
-li a {
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	padding: 1rem 1rem;
-	padding: 1rem;
-text-align: right;
-}
-
-a {
-	background: transparent;
-	border: none;
-	font-size: 1.5rem;
-	padding: .2rem;
-	color: white;
-	align-self: flex-end;
-}
-
-
-	li.active a {
-	background-color: darken($primaryColor, 10%);
-	}
-
-	 li ul li a {
-	padding-left: 8%;
-	}
-
-	 li a:hover {
-	background-color: darken($primaryColor, 10%);
-	}
-
-	 li a:active a {
-		background-color: darken($primaryColor, 10%);
-		}
-
-	.closed {
-	display: none;
-	}
-
-	.open {
-	display: block;
-	}
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* NAV  */
 
 
 
@@ -420,6 +415,15 @@ a {
  	padding: 1rem 0;
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
 
 .social {
 	text-decoration: none;
