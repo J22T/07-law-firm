@@ -164,32 +164,11 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 	
-	
+
+
 	   /*  ------------- COLUMNS LAYOUT -------------  */
 
 .flexed {
@@ -218,21 +197,6 @@ main {
 	$w: ($i / 12) * 100%;
 	.small-#{$i} { flex-basis: $w;}
 }
-
-		// width: $w;
-		// float: left;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -277,6 +241,12 @@ main {
 	
 	
 	
+
+
+
+
+
+
 	/*------------CALL TO ACTION LINKS------------*/
 	
 	.clients, .case {
@@ -295,6 +265,13 @@ main {
 	
 	
 	
+
+
+
+
+
+
+
 	/*------------BLOG POSTS---------*/
 	.blogs{
 		background-color: $primaryColor;
@@ -321,11 +298,17 @@ main {
 			color: $primaryColor;
 		}
 
-
 	}
 	
 	
 	
+
+
+
+
+
+
+
 	/*----------TIP OF THE DAY/FAQ---------------*/
 	.tips {
 		background-color: $primaryColor;
@@ -348,19 +331,19 @@ main {
 			color: $primaryColor;
 			padding: .5em;
 		}
-		
-		
-
-		
-		
+				
 	}/*end Tips*/
-	
-	
-
-
-	
-	
+		
 } // end main
+
+
+
+
+
+
+
+
+
 
 /* FOOTER  */
  div#footerContainer {
@@ -428,8 +411,16 @@ margin-right: 2vw;
 .social {
 	text-decoration: none;
 	color: $primaryColor;
-
 }
+
+
+
+
+
+
+
+
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
