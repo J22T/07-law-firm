@@ -157,6 +157,10 @@ div#navContainer {
   width: 100%;
 }
 
+div#closed a {
+  margin-right: 2vw;
+}
+
 nav {
   height: 100vh;
   background-color: #939da6;
