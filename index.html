@@ -19,40 +19,44 @@
 <body>
 
 
-<!-- HEADER STARTS HERE -->
+<!-- HEADER -->
+<div id="headerContainer">
 	<header>
-		<div class="header">
 					<img src="images/logo.png" alt="">
     				<h1>Martin, Tuft, and Brainly</h1>
 					<h2>1-800-555-1234</h2>
-			</div>
+<div id="hamBTN"><a href="#closed">&#9776;</a></div>
     </header>
+</div>
+    <!-- HEADER -->
     
-    
 
-	<nav class="clearfix">
-		<div class="navigation">
-			<a href="#footerLink"  id="hamBTN">&#9776;</a>
-   			<!-- <ul id="primaryNAV" class="closed">
-				<li><a href="index.html"><span>HOME </span></a></li>
-					<li class="active"><a href="#"><span>ATTOURNEYS </span></a></li>
-				<li><a href="#"><span>PRACTICES</span></a>
-				</li>
-			</ul> -->
-		</div>
-	</nav>
 
-	<nav>
-		<div class="smallNavBar"><a class="hamOpen" href="#footerLink"></a></div>
-	</nav>
-
+<!-- NAV -->
+<div id="navContainer">
+<nav>
+<div id="closed"><a href="#hamBTN">X</a></div>
+<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Attorneys</a></li>
+	<li><a href="#">Practices</a></li>
+</ul>
+</nav>
+</div>
+<!-- NAV -->
 
     
     
-<!-- MAIN STARTS HERE -->
-	<main class="clearfix">
-		
-		<!--ATTORNEY LIST-->
+<!-- MAIN -->
+<div id="mainContainer">
+
+<main>
+	
+	
+
+
+
+		<!--ATTORNEY-->
   		<div class="flexed">
 			
 			<div class="column small-6 medium-3 large-3">
@@ -62,7 +66,6 @@
 				<a href="#">Learn More</a>
 			</div>
 		</div><!--end column-->
-
 			
 		<div class="column small-6 medium-3 large-3">
 			<div class="Attorney">
@@ -71,7 +74,6 @@
 				<a href="#">Learn More</a>
 			</div>
 		</div><!--end column-->
-
 		
 		<div class="column small-6 medium-3 large-3">
 			<div class="Attorney">
@@ -80,7 +82,6 @@
 				<a href="#">Learn More</a>
 			</div>
 		</div><!--end column-->	
-
 		
 		<div class="column small-6 medium-3 large-3">
 			<div class="Attorney">
@@ -90,31 +91,24 @@
 			</div>
 		</div><!--end column-->	
 
-		</div><!--end ROW-->
+		</div><!--ATTORNEY-->
 		
 		
 	
 
 		<div class="flexed">
 		<div class="medium-2"></div>
-			<!-- <div class="column large-"></div>1 column gutter -->
 			<div class="column small-12 medium-4">
 			<div class="clients">
 				<a href="#"><h2>CLIENTS</h2></a>
 			</div>
 		</div><!--end column-->
-
-
-
 			
 		<div class="column small-12 medium-4">
 			<div class="case">
 				<a href="#"><h2>YOUR CASE REVIEW</h2></a>
 			</div>
 		</div><!--end column-->	
-			
-
-
 
 		<div class="column small-12 medium-4">
 			<div class="clients">
@@ -122,8 +116,7 @@
 			</div>
 		</div><!--end column-->
 
-			<!-- <div class="column large-1"></div>1 column gutter -->
-		</div><!--end row-->
+		</div><!--end flexed-->
 		
 		
 
@@ -230,7 +223,7 @@
 					Nulla quis lorem ut libero malesuada feugiat.
 					Pellentesque in ipsum id orci porta dapibus.
 				</p>
-				<a href="#"><button>Read More</button></a>
+				<a href="#">Read More</a>
 			</div>
 		</div><!--end column-->
 			
@@ -239,7 +232,7 @@
 				<h2>FAQ #1</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.  
 				</p>
-				<a href="#"><button>Read More</button></a>
+				<a href="#">Read More</a>
 			</div>
 		</div><!--end column-->
 			
@@ -248,7 +241,7 @@
 				<h2>FAQ #2</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.  
 				</p>
-				<a href="#"><button>Read More</button></a>
+				<a href="#">Read More</a>
 			</div>
 		</div><!--end column-->
 			
@@ -257,7 +250,7 @@
 				<h2>FAQ #3</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.  
 				</p>
-				<a href="#"><button>Read More</button></a>
+				<a href="#">Read More</a>
 			</div>
 		</div><!--end column-->
 
@@ -270,52 +263,39 @@
 
 		<!-- FOOTER STARTS HERE -->  
 		
-		<footer class="flexed">
+		<div id="footerContainer">
+			
+			<footer class="flexed">
+				<div class="column small-3 medium-1 large-3">
+					<div class="social">
+					<i class="fab fa-facebook-square fa-3x"></i>
+					</div>
+				</div>
+			
+				<div class="column small-3 medium-1 large-3">
+					<div class="social">
+					<i class="fab fa-instagram fa-3x"></i>
+					</div>
+				</div>
+			
+				<div class="column small-3 medium-1 large-3">
+					<div class="social">
+					<i class="fab fa-twitter-square fa-3x"></i>
+					</div>
+				</div>
+			
+				<div class="column small-3 medium-1 large-3">
+					<div class="social">
+					<i class="fab fa-linkedin fa-3x"></i>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
 
-			<div class="column small-3 medium-1 large-3">
-				<div class="social">
-				<i class="fab fa-facebook-square fa-3x"></i>
-				</div>
-			</div>
-			
-			<div class="column small-3 medium-1 large-3">
-				<div class="social">
-				<i class="fab fa-instagram fa-3x"></i>
-				</div>
-			</div>
-			
-			<div class="column small-3 medium-1 large-3">
-				<div class="social">
-				<i class="fab fa-twitter-square fa-3x"></i>
-				</div>
-			</div>
-			
-			<div class="column small-3 medium-1 large-3">
-				<div class="social">
-				<i class="fab fa-linkedin fa-3x"></i>
-				</div>
-			</div>
-		</footer>
-			
-		
-			
-		
-			
-		</div><!--end row-->
-		
-		<nav id="footerLink">
-				<div id="nav">
-				<button id="hamBTN">&#9776;</button>
-				<ul id="primaryNAV">
-						<li><a href="index.html"><span>HOME </span></a></li>
-							<li class="active"><a href="#"><span>ATTOURNEYS </span></a></li>
-						<li><a href="#"><span>PRACTICES</span></a>
-				</ul>
-			</nav>
-			</div>
-		
 	</main>
-    
+
+</div>
 
     
 <!-- PHONE MENU HIDER -->

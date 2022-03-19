@@ -6,6 +6,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* BODY  */
 body {
+	display: grid;
 	font-family: $defaultFont;
 	font-size: 16px;
 	padding-top: 10px;
@@ -14,32 +15,35 @@ body {
 
 /* HEADER  */
 
+// header {
+// 	background-color: darken($primaryColor, 1%);
+// display: grid;
+// grid-template-columns: 51px auto 44px;
+// align-items: center;
+// padding: .5rem 2vw;
 
-header {
-	background-color: darken($primaryColor, 1%);
 
+div#headerContainer {
+	grid-row-start: 1;
+}	
 
-	// flex-direction: row;
-	// justify-content: space-between;
-	// align-items: center;
-	width: 100%;
-	
-	.header {
-		display: flex;
-		// grid-template-columns: 100px auto;
+	header {
+		display: grid;
+		grid-template-columns: 51px auto 44px;
+align-items: center;
+padding: .5rem 2vw;
 		
 
 	
 	h1,h2 {
 		color: $thirdColor;
 		font-family: $defaultFont;
-		margin: .35em $gutter;
+
 	}
 
 	h1 {
 		font-size: 25px;
-		margin-left: 2rem;
-		margin-top: 3rem;
+
 	}
 
 	h2 {
@@ -54,20 +58,18 @@ header {
 	}
 		
 
-	}
-} // end header
+	}// end header
 
 
 /* NAV  */
 div#navContainer {
+grid-row-start: 4;
 	background-color: white;
 	width: 100%;
 }
 
 nav {
 	background-color: lighten($primaryColor, 30%);
-	display: flex;
-	flex-direction: column;
 
 	a {
 		background: transparent;
@@ -133,10 +135,9 @@ nav {
 
 
 
-/* MAIN  */
-// div#mainContainer {
-//     background-color: black;
-// }
+div#mainContainer {
+grid-row-start: 2;	
+}
 
 main {
 	max-width: 75rem;
@@ -363,17 +364,35 @@ main {
 } // end main
 
 /* FOOTER  */
-// div#footerContainer {
-// 	background-color: black;
-// 	width: 100%;
-// }
+ div#footerContainer {
+grid-row-start:3 ;
+ 	background-color: black;
+ 	width: 100%;
+ }
 
-// .footer {
-// 	background-color: $primaryColor;
-// 	color: $secondaryColor;
-// 	padding: 1rem 0;
-// 	text-align: center;
-// }
+div#hamBTN a,  div#closed a {
+display: block;	
+padding: 1rem 2vw;
+color: black;
+text-decoration: none;
+text-align: right;
+}
+
+div#closed a {
+margin-right: 2vw;	
+}
+
+nav {
+	height: 100vh;
+	background-color: lighten($primaryColor, 30%);
+}
+
+ .footer {
+	background-color: $primaryColor;
+ 	color: $secondaryColor;
+ 	padding: 1rem 0;
+	text-align: center;
+}
 
 .social {
 	text-decoration: none;
