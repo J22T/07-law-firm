@@ -193,25 +193,12 @@ padding-left: $gutter;
 /*  ------------- COLUMNS LAYOUT -------------  */
 
 .flexed {
-clear: both;
-margin: 1em 0;
-// display: flex;
-// flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 
 .column{
 padding: 1rem $gutter;
-// display: flex;
-// flex-wrap: wrap;
-
-h2 {
-padding: 1rem;
-}
-
-p {
-padding: 1rem;
-}
-
 }
 
 @for $i from 1 through 12 {
@@ -220,7 +207,13 @@ $w: ($i / 12) * 100%;
 }
 
 
-
+h2 {
+	padding: 1rem;
+	}
+	
+	p {
+	padding: 1rem;
+	}
 
 
 
@@ -368,10 +361,13 @@ padding: .5em;
 
 /* FOOTER  */
 div#footerContainer {
-grid-row-start:3 ;
-background-color: black;
+grid-row-start: 3;
 width: 100%;
+color: $secondaryColor;
+padding: 1rem 0;
+text-align: center;
 }
+
 
 
 
@@ -413,25 +409,23 @@ margin-right: 2vw;
 
 
 
-.footer {
-background-color: $primaryColor;
-color: $secondaryColor;
-padding: 1rem 0;
-text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
 .social {
 text-decoration: none;
-color: $primaryColor;
+color: black;
+text-align: center;
+font-size: 1rem;
+
+a {
+	color: white;
+	display: block;
+	padding: .5rem 0;
+
+a:hover {
+		color: $primaryColor;
+	}
+
+}
+
 }
 
 

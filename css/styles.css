@@ -237,17 +237,11 @@ main h1 {
   padding-left: 2vw;
 }
 main .flexed {
-  clear: both;
-  margin: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 main .column {
   padding: 1rem 2vw;
-}
-main .column h2 {
-  padding: 1rem;
-}
-main .column p {
-  padding: 1rem;
 }
 main .small-1 {
   flex-basis: 8.3333333333%;
@@ -284,6 +278,12 @@ main .small-11 {
 }
 main .small-12 {
   flex-basis: 100%;
+}
+main h2 {
+  padding: 1rem;
+}
+main p {
+  padding: 1rem;
 }
 main .att {
   margin: 0 auto;
@@ -364,8 +364,10 @@ main .tips button {
 /* FOOTER  */
 div#footerContainer {
   grid-row-start: 3;
-  background-color: black;
   width: 100%;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 div#hamBTN a, div#closed a {
@@ -381,15 +383,18 @@ div#closed a {
   margin-right: 2vw;
 }
 
-.footer {
-  background-color: #485058;
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
-}
-
 .social {
   text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+.social a {
+  color: white;
+  display: block;
+  padding: .5rem 0;
+}
+.social a a:hover {
   color: #485058;
 }
 
@@ -534,12 +539,6 @@ div#closed a {
   main {
     /*  ------------- COLUMNS LAYOUT -------------  */
   }
-  main .box {
-    font-size: 2rem;
-  }
-  main .box span {
-    font-size: 1.5rem;
-  }
   main .medium-1 {
     flex-basis: 8.3333333333%;
   }
@@ -579,7 +578,6 @@ div#closed a {
 
   div#footerContainer {
     grid-row-start: 4;
-    background-color: black;
     width: 100%;
   }
 }
@@ -592,22 +590,20 @@ div#closed a {
   /*HEADER*/
   header {
     background-color: #485058;
-  }
-  header .header {
     max-width: 75rem;
     margin: 0 auto;
     width: 100%;
   }
-  header .header h1 {
+  header h1 {
     margin-right: 30rem;
   }
-  header .header h2 {
+  header h2 {
     font-size: 24px;
     display: block;
     margin-left: 2rem;
     margin-top: 3rem;
   }
-  header .header img {
+  header img {
     padding: 1rem 0 0.5rem 2vw;
     display: block;
     width: 100px;
