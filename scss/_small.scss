@@ -302,6 +302,10 @@ grid-row-start:3 ;
  	width: 100%;
  }
 
+
+
+
+
 div#hamBTN a,  div#closed a {
 display: block;	
 padding: 1rem 2vw;
@@ -310,75 +314,91 @@ text-decoration: none;
 text-align: right;
 }
 
+
+
+
+
 div#closed a {
 margin-right: 2vw;	
 }
+
+
+
+
+
+div#navContainer {
+	grid-row-start: 4;
+		background-color: white;
+		width: 100%;
+	}
 
 nav {
 	height: 100vh;
 	background-color: lighten($primaryColor, 30%);
 
-	ul li a {
-		display: block;
-		color: #fff;
-		text-decoration: none;
-		padding: 1rem 1rem; /*44px min*/
-		border-bottom: solid 1px rgba(0,0,0,0.3);
-		padding: 1rem;
+ul {
+border-bottom: 1px solid white;
+
+ul li {
+	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+	padding: 0;
+	margin: 0;
 	}
+
+li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 1rem 1rem;
+	padding: 1rem;
 }
+
+a {
+	background: transparent;
+	border: none;
+	font-size: 1rem;
+	padding: .2rem;
+	color: white;
+	margin-right: 1rem;
+	align-self: flex-end;
+}
+
+
+
+ul li.active a {
+background-color: darken($primaryColor, 5%);
+}
+
+ul li ul li a {
+padding-left: 8%;
+}
+
+ul li a:hover {
+background-color: darken($primaryColor, 5%);
+}
+
+ul.closed {
+display: none;
+}
+
+ul.open {
+display: block;
+}
+}
+
+}
+
+
+
+
+
+
 
 
 
 
 
 /* NAV  */
-div#navContainer {
-	grid-row-start: 4;
-		background-color: white;
-		width: 100%;
-	}
-	
-	nav {
-		background-color: lighten($primaryColor, 30%);
-	
-		a {
-			background: transparent;
-			border: none;
-			font-size: 1rem;
-			padding: .2rem;
-			color: white;
-			margin-right: 1rem;
-			align-self: flex-end;
-		}
-	
-	ul li {
-	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-	padding: 0;
-	margin: 0;
-	}
-
-	ul li.active a {
-	background-color: darken($primaryColor, 5%);
-	}
-
-	ul li ul li a {
-	padding-left: 8%;
-	}
-
-	ul li a:hover {
-	background-color: darken($primaryColor, 5%);
-	}
-
-	ul.closed {
-	display: none;
-	}
-
-	ul.open {
-	display: block;
-	}
-
-}
 
 
 

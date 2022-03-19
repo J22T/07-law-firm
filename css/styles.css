@@ -313,21 +313,6 @@ div#closed a {
   margin-right: 2vw;
 }
 
-nav {
-  height: 100vh;
-  background-color: #939da6;
-}
-nav ul li a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding: 1rem 1rem;
-  /*44px min*/
-  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-}
-
-/* NAV  */
 div#navContainer {
   grid-row-start: 4;
   background-color: white;
@@ -335,9 +320,25 @@ div#navContainer {
 }
 
 nav {
+  height: 100vh;
   background-color: #939da6;
 }
-nav a {
+nav ul {
+  border-bottom: 1px solid white;
+}
+nav ul ul li {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  padding: 1rem;
+}
+nav ul a {
   background: transparent;
   border: none;
   font-size: 1rem;
@@ -346,27 +347,23 @@ nav a {
   margin-right: 1rem;
   align-self: flex-end;
 }
-nav ul li {
-  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-  padding: 0;
-  margin: 0;
-}
-nav ul li.active a {
+nav ul ul li.active a {
   background-color: #3d434a;
 }
-nav ul li ul li a {
+nav ul ul li ul li a {
   padding-left: 8%;
 }
-nav ul li a:hover {
+nav ul ul li a:hover {
   background-color: #3d434a;
 }
-nav ul.closed {
+nav ul ul.closed {
   display: none;
 }
-nav ul.open {
+nav ul ul.open {
   display: block;
 }
 
+/* NAV  */
 .footer {
   background-color: #485058;
   color: white;
