@@ -59,17 +59,20 @@ header {
 
 
 /* NAV  */
-div#navContainer {background-color: white; width: 100%; float: left;}
+div#navContainer {
+	background-color: white;
+	width: 100%;
+}
 
 nav {
 	background-color: lighten($primaryColor, 30%);
 	display: flex;
 	flex-direction: column;
 
-	button {
+	a {
 		background: transparent;
 		border: none;
-		font-size: 3rem;
+		font-size: 1rem;
 		padding: .2rem;
 		color: white;
 		margin-right: 1rem;
@@ -179,17 +182,17 @@ main {
 	
 	   /*  ------------- COLUMNS LAYOUT -------------  */
 
-.row{
+.flexed {
 	clear: both;
 	margin: 1em 0;
-	display: flex;
-	flex-wrap: wrap;
+	// display: flex;
+	// flex-wrap: wrap;
 }
 
 .column{
 	padding: 1rem $gutter;
-	display: flex;
-	flex-wrap: wrap;
+	// display: flex;
+	// flex-wrap: wrap;
 
 	h2 {
 		padding: 1rem;
@@ -245,17 +248,18 @@ main {
 			font-size: 24px;
 			margin: 5px;
 		}
+
 		img {
 			width: 100%;
 		}
-		button {
-			// width: 100%;
+
+		a {
 			background-color: $primaryColor;
 			border-radius: 1rem;
 			border: none;
 			padding: 1rem;
 			color: white;
-			margin: 2rem;
+			margin: 1rem;
 			font-weight: bold;
 		}
 	}
@@ -265,13 +269,13 @@ main {
 	
 	/*------------CALL TO ACTION LINKS------------*/
 	
-	.clients, .case{
+	.clients, .case {
 		background-color: $primaryColor;
 		text-align: center;
 		padding: 2em 0;
 		margin: .5em 0;
 		
-		a, h2{
+		a, h2 {
 			width: 100%;
 			height: 100%;
 			text-decoration: none;
@@ -286,17 +290,20 @@ main {
 		background-color: $primaryColor;
 		
 		
-		img{
+		img {
 			width: 100%;
 		}
-		h2, p{
+
+		h2, p {
 			margin: .5em $gutter;
 			color: $thirdColor;
 		}
-		h2{
+
+		h2 {
 			font-size: 24px;
 		}
-		button{
+
+		a {
 			width: 100%;
 			background-color: $thirdColor;
 			padding: 1em;
@@ -315,14 +322,16 @@ main {
 		color: $thirdColor;
 		padding: .5em;
 		
-		h2{
+		h2 {
 			font-size: 24px;
 			margin: .5em 0;
 		}
-		p{
+
+		p {
 			margin: .5em 0;
 		}
-		button{
+
+		button {
 			background-color: $thirdColor;
 			text-decoration: none;
 			border: none;
@@ -366,11 +375,10 @@ main {
 // 	text-align: center;
 // }
 
-.social{
+.social {
 	text-decoration: none;
 	color: $primaryColor;
-	display: flex;
-	flex-direction: row;
+
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

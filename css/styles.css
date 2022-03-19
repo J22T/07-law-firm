@@ -151,7 +151,6 @@ header .header img {
 div#navContainer {
   background-color: white;
   width: 100%;
-  float: left;
 }
 
 nav {
@@ -159,10 +158,10 @@ nav {
   display: flex;
   flex-direction: column;
 }
-nav button {
+nav a {
   background: transparent;
   border: none;
-  font-size: 3rem;
+  font-size: 1rem;
   padding: .2rem;
   color: white;
   margin-right: 1rem;
@@ -217,16 +216,12 @@ main h1 {
   color: white;
   padding-left: 2vw;
 }
-main .row {
+main .flexed {
   clear: both;
   margin: 1em 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 main .column {
   padding: 1rem 2vw;
-  display: flex;
-  flex-wrap: wrap;
 }
 main .column h2 {
   padding: 1rem;
@@ -285,13 +280,13 @@ main .Attorney h2 {
 main .Attorney img {
   width: 100%;
 }
-main .Attorney button {
+main .Attorney a {
   background-color: #485058;
   border-radius: 1rem;
   border: none;
   padding: 1rem;
   color: white;
-  margin: 2rem;
+  margin: 1rem;
   font-weight: bold;
 }
 main .clients, main .case {
@@ -319,7 +314,7 @@ main .blogs h2, main .blogs p {
 main .blogs h2 {
   font-size: 24px;
 }
-main .blogs button {
+main .blogs a {
   width: 100%;
   background-color: silver;
   padding: 1em;
@@ -350,8 +345,6 @@ main .tips button {
 .social {
   text-decoration: none;
   color: #485058;
-  display: flex;
-  flex-direction: row;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -521,8 +514,8 @@ main .tips button {
   }
 }
 @media only screen and (min-width: 64em) {
-  nav, footer {
-    max-width: 1200px;
+  footer {
+    max-width: 75rem;
     margin: auto;
   }
 
@@ -571,8 +564,9 @@ main .tips button {
     display: inline;
   }
   nav nav.clearfix .navigation {
-    max-width: 75rem;
+    max-width: 60rem;
     margin: 0 auto;
+    height: 1rem;
     background-color: silver;
   }
   nav nav.clearfix ul {
