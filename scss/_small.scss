@@ -312,6 +312,7 @@ padding: 1rem 2vw;
 color: black;
 text-decoration: none;
 text-align: right;
+font-size: 2rem;
 }
 
 
@@ -319,7 +320,7 @@ text-align: right;
 
 
 div#closed a {
-margin-right: 2vw;	
+margin-right: 2vw;
 }
 
 
@@ -351,39 +352,43 @@ li a {
 	text-decoration: none;
 	padding: 1rem 1rem;
 	padding: 1rem;
+text-align: right;
 }
 
 a {
 	background: transparent;
 	border: none;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	padding: .2rem;
 	color: white;
-	margin-right: 1rem;
 	align-self: flex-end;
 }
 
 
+	li.active a {
+	background-color: darken($primaryColor, 10%);
+	}
 
-ul li.active a {
-background-color: darken($primaryColor, 5%);
-}
+	 li ul li a {
+	padding-left: 8%;
+	}
 
-ul li ul li a {
-padding-left: 8%;
-}
+	 li a:hover {
+	background-color: darken($primaryColor, 10%);
+	}
 
-ul li a:hover {
-background-color: darken($primaryColor, 5%);
-}
+	 li a:active a {
+		background-color: darken($primaryColor, 10%);
+		}
 
-ul.closed {
-display: none;
-}
+	.closed {
+	display: none;
+	}
 
-ul.open {
-display: block;
-}
+	.open {
+	display: block;
+	}
+
 }
 
 }
