@@ -168,7 +168,7 @@ nav {
 nav ul {
   border-bottom: 1px solid white;
 }
-nav ul ul li {
+nav ul li {
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
   padding: 0;
   margin: 0;
@@ -177,8 +177,7 @@ nav ul li a {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: 1rem 1rem;
-  padding: 1rem;
+  padding: 1rem 2vw;
   text-align: right;
 }
 nav ul a {
