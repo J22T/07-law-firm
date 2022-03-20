@@ -26,14 +26,24 @@ header {
 
 
 	h1 {
-		margin-right: 30rem;
+		font-size: 25px;
+		// margin-left: 2rem;
+		margin-top: 1rem;
 	}
 
-	div#phone {
+	h2 {
 		font-size: 24px;
 		display: block;
 		margin-left: 2rem;
-		margin-top: 3rem;
+		margin-top: 2rem;
+	}
+	div#phone {
+		display: block;
+		justify-self: end;
+		color: white;
+		text-decoration: none;
+		font-weight:500;
+		font-size: 2rem;
 	}
 
 	img {

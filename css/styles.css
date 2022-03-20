@@ -471,14 +471,13 @@ div#closed a {
   }
   header h1 {
     font-size: 25px;
-    margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   header h2 {
     font-size: 24px;
     display: block;
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   header img {
     padding: 1rem 0 0.5rem 2vw;
@@ -539,7 +538,6 @@ div#closed a {
     background-color: #3d434a;
   }
   nav ul li ul li {
-    float: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
   nav ul li.active a {
@@ -621,13 +619,22 @@ div#closed a {
     width: 100%;
   }
   header h1 {
-    margin-right: 30rem;
+    font-size: 25px;
+    margin-top: 1rem;
   }
-  header div#phone {
+  header h2 {
     font-size: 24px;
     display: block;
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+  }
+  header div#phone {
+    display: block;
+    justify-self: end;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
   }
   header img {
     padding: 1rem 0 0.5rem 2vw;
