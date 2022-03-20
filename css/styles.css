@@ -171,13 +171,12 @@ div#closed a {
 
 nav {
   height: 100vh;
-  background-color: #939da6;
+  background-color: #8d8d8d;
 }
 nav ul {
   border-bottom: 1px solid white;
 }
 nav ul li {
-  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
   padding: 0;
   margin: 0;
 }
@@ -195,6 +194,7 @@ nav ul a {
   padding: .2rem;
   color: white;
   align-self: flex-end;
+  background-color: #8d8d8d;
 }
 nav ul li.active a {
   background-color: #31373c;
@@ -203,7 +203,7 @@ nav ul li ul li a {
   padding-left: 8%;
 }
 nav ul li a:hover {
-  background-color: #31373c;
+  background-color: #414850;
 }
 nav ul li a:active a {
   background-color: #31373c;
@@ -371,7 +371,7 @@ main .tips p {
   margin: .5em 0;
 }
 main .tips a {
-  background-color: silver;
+  background-color: #485058;
   text-decoration: none;
   border: none;
   color: #485058;
@@ -395,6 +395,7 @@ div#hamBTN a, div#closed a {
   text-decoration: none;
   text-align: right;
   font-size: 2rem;
+  background-color: #8d8d8d;
 }
 
 div#closed a {
@@ -718,5 +719,9 @@ div#closed a {
   }
   nav main .large-12 {
     flex-basis: 100%;
+  }
+  nav main .tips {
+    display: flex;
+    flex-direction: row;
   }
 }

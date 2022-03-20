@@ -136,6 +136,11 @@ main {
 		$w: ($i / 12) * 100%;
 		.large-#{$i} { flex-basis: $w;}
 	}
+
+	.tips {
+		display: flex;
+		flex-direction: row;
+	}
 	
 }/*end MAIN*/
 }
