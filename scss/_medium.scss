@@ -7,6 +7,10 @@ div#headerContainer {
 header {
 	margin-top: 0;
 	grid-template-columns: 51px auto auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	// grid-template-columns: 100px auto;
 
 	div#phone {
 		display: block;
@@ -21,12 +25,7 @@ header {
 		color: $thirdColor;
 	}
 	
-	.header {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		// grid-template-columns: 100px auto;
-		
+
 		input[type=text] {
 			height: 40px;
 			width: 30%;
@@ -67,8 +66,7 @@ header {
 	}
 		
 
-	}
-} // end header
+	}// end header
 
 
 

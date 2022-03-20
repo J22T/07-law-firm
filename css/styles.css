@@ -162,7 +162,6 @@ header img {
 div#navContainer {
   grid-row-start: 4;
   background-color: white;
-  width: 100%;
 }
 
 div#closed a {
@@ -437,6 +436,9 @@ div#closed a {
   header {
     margin-top: 0;
     grid-template-columns: 51px auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   header div#phone {
     display: block;
@@ -449,12 +451,7 @@ div#closed a {
   header div#phone:hover {
     color: silver;
   }
-  header .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header .header input[type=text] {
+  header input[type=text] {
     height: 40px;
     width: 30%;
     padding-left: 5px;
@@ -463,27 +460,27 @@ div#closed a {
     transition: width 0.4s ease-in-out;
     align-self: flex-end;
   }
-  header .header input[type=text]:focus {
+  header input[type=text]:focus {
     height: 35px;
     width: 40%;
   }
-  header .header h1, header .header h2 {
+  header h1, header h2 {
     color: silver;
     font-family: "Roboto", sans-serif;
     margin: 0.35em 2vw;
   }
-  header .header h1 {
+  header h1 {
     font-size: 25px;
     margin-left: 2rem;
     margin-top: 3rem;
   }
-  header .header h2 {
+  header h2 {
     font-size: 24px;
     display: block;
     margin-left: 2rem;
     margin-top: 3rem;
   }
-  header .header img {
+  header img {
     padding: 1rem 0 0.5rem 2vw;
     display: block;
     width: 100px;
