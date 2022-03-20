@@ -244,6 +244,7 @@ main p {
 }
 main .flexed {
   display: flex;
+  flex-wrap: wrap;
 }
 main .column {
   padding: 1rem 2vw;
@@ -288,7 +289,6 @@ main .Attorney {
   background-color: #b3b3b3;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 main .Attorney h2 {
   text-align: center;
@@ -558,6 +558,13 @@ div#closed a {
   main {
     /*  ------------- COLUMNS LAYOUT -------------  */
   }
+  main .Attorney {
+    background-color: #b3b3b3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
   main .medium-1 {
     flex-basis: 8.3333333333%;
   }
@@ -670,6 +677,13 @@ div#closed a {
     max-width: 75rem;
     margin: 0 auto;
     /*  ------------- COLUMNS LAYOUT -------------  */
+  }
+  nav main .Attorney {
+    background-color: #b3b3b3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
   }
   nav main .large-1 {
     flex-basis: 8.3333333333%;

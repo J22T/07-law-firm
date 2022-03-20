@@ -118,7 +118,16 @@ div#mainContainer {
 main {
 	max-width: 75rem;
 	margin: 0 auto;
-	
+
+
+
+	.Attorney {
+		background-color: darken($secondaryColor, 30%);
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+	}
 	
 	 /*  ------------- COLUMNS LAYOUT -------------  */
 

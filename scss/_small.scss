@@ -200,7 +200,7 @@ h2 {
 
 .flexed {
 display: flex;
-// flex-wrap: wrap;
+flex-wrap: wrap;
 }
 
 .column{
@@ -227,7 +227,6 @@ $w: ($i / 12) * 100%;
 background-color: darken($secondaryColor, 30%);
 display: flex;
 flex-direction: column;
-height: 100%;
 
 	h2 {
 	text-align: center;
