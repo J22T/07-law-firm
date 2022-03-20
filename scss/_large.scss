@@ -59,7 +59,7 @@ div#navContainer {
 }
 
 nav {
-	background-color: lighten($primaryColor, 30%);
+	background-color: darken($thirdColor, 20%);
 
 nav.clearfix {
 	background-color: $primaryColor;

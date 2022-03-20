@@ -316,16 +316,13 @@ main .Attorney a {
 main .clients, main .case {
   background-color: #485058;
   text-align: center;
-  margin-left: .5rem;
-  margin-right: .5rem;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-main .clients a, main .clients h2, main .case a, main .case h2 {
-  text-decoration: none;
+main .clients a, main .case a {
   color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  max-width: 100%;
+  text-decoration: none;
 }
 main .blogs {
   background-color: #485058;
@@ -354,6 +351,13 @@ main .blogs a {
   color: #485058;
   text-decoration: none;
   text-align: center;
+}
+main .blogs a, main .blogs h2 {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  max-width: 100%;
 }
 main .tips {
   background-color: #485058;
@@ -498,7 +502,7 @@ div#closed a {
 
   nav {
     height: auto;
-    background-color: #939da6;
+    background-color: #8d8d8d;
   }
   nav ul.closed {
     display: block;
@@ -641,7 +645,7 @@ div#closed a {
   }
 
   nav {
-    background-color: #939da6;
+    background-color: #8d8d8d;
     /*MAIN*/
     /*end MAIN*/
   }

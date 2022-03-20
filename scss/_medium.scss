@@ -92,7 +92,7 @@ div#hamBTN, div#closed {
 
 nav {
 	height: auto;
-	background-color: lighten($primaryColor, 30%);
+	background-color: darken($thirdColor, 20%);
 
 	ul.closed {
 		display:block;
