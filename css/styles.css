@@ -336,7 +336,8 @@ main .blogs {
   flex-direction: column;
   align-items: center;
   max-width: 20rem;
-  max-height: 100%;
+  max-height: 30rem;
+  margin-bottom: 2rem;
 }
 main .blogs img {
   width: 100%;
@@ -354,6 +355,8 @@ main .blogs a {
   padding: 1em;
   border: none;
   color: #485058;
+  text-decoration: none;
+  text-align: center;
 }
 main .tips {
   background-color: #485058;
@@ -361,6 +364,7 @@ main .tips {
   padding: .5em;
   display: flex;
   flex-direction: column;
+  max-height: 30rem;
 }
 main .tips h2 {
   font-size: 24px;
