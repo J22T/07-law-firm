@@ -244,7 +244,6 @@ main p {
 }
 main .flexed {
   display: flex;
-  flex-wrap: wrap;
 }
 main .column {
   padding: 1rem 2vw;
@@ -321,6 +320,9 @@ main .clients, main .case {
   margin-right: .5rem;
   margin: 0;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 main .clients a, main .clients h2, main .case a, main .case h2 {
   text-decoration: none;
@@ -357,10 +359,11 @@ main .tips {
   background-color: #485058;
   color: silver;
   padding: .5em;
+  display: flex;
+  flex-direction: column;
 }
 main .tips h2 {
   font-size: 24px;
-  margin: .5em 0;
 }
 main .tips p {
   margin: .5em 0;
@@ -609,7 +612,7 @@ div#closed a {
   header h1 {
     margin-right: 30rem;
   }
-  header h2 {
+  header div#phone {
     font-size: 24px;
     display: block;
     margin-left: 2rem;

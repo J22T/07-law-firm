@@ -200,7 +200,7 @@ h2 {
 
 .flexed {
 display: flex;
-flex-wrap: wrap;
+// flex-wrap: wrap;
 }
 
 .column{
@@ -275,6 +275,9 @@ margin-left: .5rem;
 margin-right: .5rem;
 margin: 0;
 padding: 1rem;
+display: flex;
+flex-direction: column;
+height: 100%;
 
 a, h2 {
 text-decoration: none;
@@ -302,7 +305,6 @@ flex-direction: column;
 align-items: center;
 max-width: 20rem;
 max-height: 100%;
-
 
 img {
 width: 100%;
@@ -341,10 +343,11 @@ color: $primaryColor;
 background-color: $primaryColor;
 color: $thirdColor;
 padding: .5em;
+display: flex;
+flex-direction: column;
 
 h2 {
 font-size: 24px;
-margin: .5em 0;
 }
 
 p {
